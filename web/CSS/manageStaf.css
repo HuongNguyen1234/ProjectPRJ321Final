@@ -1,0 +1,106 @@
+.manageStaffTable{
+    margin: 0 auto;   
+    border-collapse: separate;
+    border-spacing: 30px 100px;
+    
+}
+
+.manageStaffTable th{
+    text-align: center;
+    /*border: 2px solid red;*/
+/*    width: 50px;
+    height: 50px;*/
+    /*border-radius: 5px;*/
+    /*background-color: #F79862;*/
+}
+
+.manageStaffTable td{
+    border: 2px solid gray;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #F79862;
+}
+
+.manageStaffTable .manageStaffContain{   
+    position: relative;
+    width: 100px;
+    height: 50px;
+}
+
+.manageStaffTable .manageStaffContain::before{
+    position: absolute;
+    border-top: 50px solid #B3672B;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    content: "FLASH POST";
+    font-size: 11px;
+    left: -15px;
+    top: 35px;
+    height: 0;
+    width: 70px;
+}
+.manageStaffTable .manageStaffContain::after{
+    position: absolute;
+    font-family: FontAwesome;
+    content: "\f0e7";
+    font-size: 30px;
+    color: yellow;
+    border: 4px solid red;
+    border-radius: 100%;
+    left: 33px;
+    width: 30px;
+    height: 30px;
+    top: 40px;
+}
+
+.manageStaffTable .manageStaffContain .manageStaffContainText{   
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin:auto;
+    width: 100px;
+    height: 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.manageStaffTable .manageStaffHeadContain{
+    position: relative;
+    background-color: #B3672B;
+    width: 74px;
+    height: 50px;
+    margin: auto;
+}
+
+.manageStaffTable .manageStaffHeadContain::after{
+    position: absolute;
+    content: "";
+    border-left: 37px solid transparent;
+    border-right: 37px solid transparent;
+    border-top: 25px solid #B3672B;
+    left: 0;
+    top:50px;
+}
+
+.manageStaffTable .manageStaffHeadContain::before{
+    border-bottom: 0 solid transparent;
+    border-top: 37px solid transparent;
+    border-left: 37px solid #B3672B;
+    border-right:  37px solid #B3672B;
+    content: "";
+    top: -25px;
+    left: 0;
+    position: absolute;
+}
+
+.manageStaffTable .manageStaffHeadContain .manageStaffHeadContainText{
+    /*background-color: green;*/
+    margin: auto;
+    left: 0;right: 0;
+    top: 0;bottom: 0;
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    z-index: 999;
+}

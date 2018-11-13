@@ -1,0 +1,234 @@
+.MemberContain{
+    width: 80%;
+    display: flex;
+    flex-flow: row;
+    
+}
+
+.infoMember{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color:  #F9812A;    
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 25px auto;
+}
+
+.infoMemberImage{
+    background-color: green;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;   
+    transition: 1s;
+    transform: scale(0);
+}
+
+.infoMemberImageHidden{
+    position: absolute;
+    top: 0;
+    left: 0;    
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    background-color: #883000;
+    transition: 2s;   
+    opacity: 0.9;
+    color:white;  
+}
+
+.infoMemberImageHidden .infoMemberImageHiddenCircle img{
+    border-radius: 50%;
+}
+
+.infoMember:hover .infoMemberImageHidden{
+    opacity: 0;  
+    transform: scale(0);
+}
+
+.infoMember:hover .infoMemberImage{
+    transform: scale(1);
+}
+
+.infoMemberText{
+    color: brown;
+    border-top: 2px solid brown; 
+    background-color: #FD6A02;
+    height: 100px;
+}
+
+
+
+
+/*===============================================CUBE==========================================================================*/
+.playground{
+  perspective: 800px;
+  height: 250px;
+  width: 20%;
+  z-index: 999;
+}
+
+.cube{
+  -webkit-transform-style: preserve-3d;
+  position: relative;
+  margin: 0 auto;
+  width: 75px;
+  height: 75px;
+  /* Uncomment to make it spin */
+  animation: spin 16s infinite linear;
+  margin: 20px auto;
+  top:100px;
+  -webkit-transform-origin: 100% 50%;
+}
+
+@-webkit-keyframes spin{
+  from { 
+    -webkit-transform: rotateX(-45deg) rotateY(0deg); 
+  }
+  to { 
+    -webkit-transform: rotateX(-45deg) rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes pulsate{
+  from{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.25;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.face{
+  width: 150px;
+  height: 150px;
+  border: 6px outset #ccc;
+  text-align: center;
+  font-size: 60pt;
+  position: absolute;
+  background-color: #2653ad;
+  /*-webkit-animation: pulsate 8s infinite linear;*/  
+  -webkit-transition: -webkit-transform 1s ease-out, opacity 1s linear;
+  box-sizing: border-box;
+  -webkit-transform-origin: 50% 150px;
+}
+
+.cube:hover .left{
+  -webkit-transform: rotateY(90deg) translateZ(75px) rotateX(-90deg);
+}
+
+.left{
+  -webkit-transform: rotateY(90deg) translateZ(75px) rotateX(0deg);
+  background: url("../Image/QRImage.png");
+  background-size: 100%;
+}
+
+.cube:hover .right{
+  -webkit-transform: rotateY(-90deg) translateZ(75px) rotateX(-90deg);
+}
+
+.right{
+   -webkit-transform: rotateY(-90deg) translateZ(75px);
+  background: url("../Image/QRImage.png");
+  background-size: 100%;
+}
+
+.cube:hover .front{
+  -webkit-transform: translateZ(75px) rotateX(-90deg);
+}
+
+.front{
+  -webkit-transform: translateZ(75px);
+   background: url("../Image/QRImage.png");
+  background-size: 100%;
+}
+
+.cube:hover .rear{
+  -webkit-transform: translateZ(-75px) rotateX(90deg);
+}
+
+.rear{
+  -webkit-transform: translateZ(-75px);
+  background: url("../Image/QRImage.png");
+  background-size: 100%;
+}
+
+.cube:hover .top{
+  opacity: 0;
+}
+
+.top{
+   -webkit-transform: rotateX(90deg) translateZ(75px);
+  background: url("../Image/QRImage.png");
+  background-size: 100%;
+  -webkit-transform-origin: 50% 50%;
+}
+
+.bottom{
+  -webkit-transform: rotateX(90deg) translateZ(-75px);
+  background: url("../Image/QRImage.png");
+  background-size: 100%;
+  -webkit-transform-origin: 50% 50%;
+}
+/*==================================*/
+.cube:hover .left1{
+  -webkit-transform: rotateY(90deg) translateZ(75px) rotateX(-90deg);
+}
+
+.left1{
+  -webkit-transform: rotateY(90deg) translateZ(75px) rotateX(0deg);
+  background: url("../Image/avatar4.jpg");
+  background-size: 100%;
+}
+
+.cube:hover .right1{
+  -webkit-transform: rotateY(-90deg) translateZ(75px) rotateX(-90deg);
+}
+
+.right1{
+   -webkit-transform: rotateY(-90deg) translateZ(75px);
+  background: url("../Image/avatar4.jpg");
+  background-size: 100%;
+}
+
+.cube:hover .front1{
+  -webkit-transform: translateZ(75px) rotateX(-90deg);
+}
+
+.front1{
+  -webkit-transform: translateZ(75px);
+   background: url("../Image/avatar4.jpg");
+  background-size: 100%;
+}
+
+.cube:hover .rear1{
+  -webkit-transform: translateZ(-75px) rotateX(90deg);
+}
+
+.rear1{
+  -webkit-transform: translateZ(-75px);
+  background: url("../Image/avatar4.jpg");
+  background-size: 100%;
+}
+
+.cube:hover .top1{
+  opacity: 0;
+}
+
+.top1{
+   -webkit-transform: rotateX(90deg) translateZ(75px);
+  background: url("../Image/avatar4.jpg");
+  background-size: 100%;
+  -webkit-transform-origin: 50% 50%;
+}
+
+.bottom1{
+  -webkit-transform: rotateX(90deg) translateZ(-75px);
+  background: url("../Image/avatar4.jpg");
+  background-size: 100%;
+  -webkit-transform-origin: 50% 50%;
+}
+
+/*==============================================================================================================================*/

@@ -1,0 +1,179 @@
+
+.searchPosHeader{
+    background-color: rgb(121,56,2);
+    width: 30%;
+    position: relative;
+    height: 50px;
+}
+
+.searchPosHeader h2{
+    position: absolute;
+    height: 25px;
+    width: 90%;
+    margin: auto ;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.searchPosHeader::before{
+    position: absolute;
+    border-bottom: 25px solid rgb(247,152,98);
+    border-left: 20px solid transparent;
+    border-top: 25px solid rgb(247,152,98);
+    border-right: 20px solid transparent;
+    content: "";
+    left: -10px;
+    right: -10px;
+}
+
+.searchPosHeader div::before {
+    top:15px;
+    border: 6px solid rgb(239,131,13);
+    content: "";
+    height: 6px;
+    left: -15px;    
+    position: absolute;
+    width: 6px;
+    border-radius: 100%;
+}
+
+.searchPosHeader div::after {
+    top:15px;
+    border: 6px solid rgb(239,131,13);
+    content: "";
+    height: 6px;
+    right: -15px;
+    position: absolute;
+    width: 6px;
+    border-radius: 100%;
+}
+
+.postOfficeTable{
+    margin: 20px auto; 
+    width: 80% ;
+    background-color: rgb(247,152,98);  
+    text-align: left;
+    border-radius: 5px;
+    
+}
+
+.postOfficeTable b{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin:auto;
+    width: 125px;
+    height: 15px;
+    color: wheat;
+    text-align: center;   
+}
+
+.postOfficeTable .labelPostOfficeTable{
+    position: relative;
+    background: rgb(136,48,0);
+    width: 140px;
+    height: 30px;
+    border-radius: 0 0 5px 5px;
+    margin: 0 auto;
+}
+
+.postOfficeTable .labelPostOfficeTable::before{
+    position: absolute;
+    background: rgb(136,48,0);
+    width: inherit;
+    height: 10px;
+    top: -10px;
+    content: "";
+    border-radius: 5px 0 0 0;
+}
+
+.postOfficeTable .labelPostOfficeTable::after{
+    position: absolute;
+    background: rgb(204,119,34);
+    width: 5px;
+    height: 8px;
+    top: -10px;
+    right: -5px;
+    content: "";
+    border-top-right-radius: 5px;
+}
+
+.postOfficeTable select{
+    width: 80%;
+    height: 30px;
+    background-color:whitesmoke;
+    border-radius: 5px;
+/*    margin: 30px auto;*/
+}
+
+.postOfficeTable .buttonPostOfficeTable{
+    width: 140px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(136,48,0);
+    border: 1px solid rgb(136,48,0);
+    color: wheat;
+    font-weight: bold;
+}
+
+.listPostOffice{
+    margin: 0 auto; 
+    width: 80% ;
+    background-color: rgb(247,152,98);  
+    border-radius: 5px;
+}
+
+.listPostOfficeTextHeader{
+    position: relative;
+    background-color: rgb(136,48,0);
+    width: 300px;
+    height: 50px;
+    color: wheat;
+    margin: 0 auto;
+    border-radius: 0 0 5px 5px;
+}
+
+.listPostOfficeTextHeader::before{
+    position: absolute;
+    background: rgb(136,48,0);
+    width: inherit;
+    height: 10px;
+    top: -10px;
+    left: 0;
+    content: "";
+    border-radius: 5px 0 0 0;
+}
+
+.listPostOfficeTextHeader::after{
+    position: absolute;
+    background: rgb(204,119,34);
+    width: 5px;
+    height: 8px;
+    top: -10px;
+    right: -5px;
+    content: "";
+    border-top-right-radius: 5px;
+}
+
+.listPostOfficeTextArea{
+    position: absolute;
+    width: 80%;
+    height: 450px;
+    top: 0;left: 0;bottom: 0;right: 0;
+    margin: 20px auto;
+    background-color:white;
+    border-radius: 5px;
+}
+
+.listPostOfficeTextAreaContain{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}

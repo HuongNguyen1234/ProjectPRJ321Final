@@ -1,0 +1,289 @@
+.employeeContainHeader{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.employeeContainHeaderSub{
+    position: relative;
+    margin: 0 auto;
+    width: 60%;
+    height: 40px;
+    background-color: red;
+}
+
+.employeeContainHeaderSub::before{
+    border: 5px solid rgb(229, 99, 21);
+    content: "";
+    height: 20px;
+    left: -40px;
+    position: absolute;
+    top: 5px;
+    width: 20px;
+    border-radius: 100%;
+}
+
+.employeeContainHeaderSub::after{
+    border: 5px solid rgb(229, 99, 21);
+    content: "";
+    height: 20px;
+    right: -40px;
+    position: absolute;
+    top: 5px;
+    width: 20px;
+    border-radius: 100%;
+}
+
+.employeeContainHeaderFirst::before{
+    border-bottom: 20px solid rgb(229, 99, 21);
+    border-top: 20px solid rgb(229, 99, 21);
+    border-left: 25px solid transparent;
+    border-right:  25px solid transparent;
+    content: "";
+    left: -25px;
+    height: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.employeeContainHeaderFirst::after{
+    
+}
+
+.employeeContainHeaderContainText{
+    position: absolute;
+    width: 60%;
+    height: 50%;
+    bottom: 0;
+    top:0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.employeeContainInformation{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.employeeContainSub{
+    width: 100%;
+    float:left;
+    display: flex;
+    flex-wrap: nowrap;
+}
+/*===========================Even=============================================*/
+.employeeBanner{
+    position: relative;
+    background-color: rgb(229, 99, 21);
+    height: 40px;
+    width: 20%;
+    font-size: 25px;
+    white-space: nowrap;
+    margin: 20px;   
+}
+
+.employeeBannerFirst::before{
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 25px solid rgb(229, 99, 21);
+    content: "";
+    right:-25px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.employeeBannerFirst::after{
+    border: 5px solid white;
+    content: "";
+    height: 4px;
+    right: -7px;
+    position: absolute;
+    top: 12px;
+    width: 4px;
+    border-radius: 100%;
+}
+
+.employeeBannerContainText{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.employeeBannerLast::before{
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 25px solid rgb(229, 99, 21);
+    content: "";
+    left:-25px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.employeeBannerLast::after{
+    border: 5px solid white;
+    content: "";
+    height: 4px;
+    left: -7px;
+    position: absolute;
+    top: 12px;
+    width: 4px;
+    border-radius: 100%;
+}
+
+.employeeBannerMiddle{
+    position: relative;
+    background-color: rgb(229, 99, 21);
+    height: 40px;
+    width: 20px;
+    font-size: 25px;
+    white-space: nowrap;
+    margin: 20px;
+}
+
+.employeeBannerMiddle::before{
+    border-bottom: 20px solid rgb(229, 99, 21);
+    border-top: 20px solid rgb(229, 99, 21);
+    border-left: 25px solid transparent;
+    border-right:  25px solid transparent;
+    content: "";
+
+    left: -25px;
+    height: 0;
+    position: absolute;
+    width: 20px;
+}
+
+.employeeBannerMiddle::after{
+    border: 5px solid white;
+    content: "";
+    height: 4px;
+    left: 3.5px;
+    position: absolute;
+    top: 12px;
+    width: 4px;
+    border-radius: 100%;
+}
+
+.employeeBannerMain{
+    position: relative;
+    background-color: rgb(229, 99, 21);
+    height: 40px;
+    width: 50%;
+    font-size: 25px;
+    white-space: nowrap;
+    margin: 20px;   
+}
+
+/*=============================Odd============================================*/
+.employeeBannerOdd{
+    position: relative;
+    background-color: rgb(139, 64, 0);
+    height: 40px;
+    width: 20%;
+    font-size: 25px;
+    white-space: nowrap;
+    margin: 20px;   
+    color: white;
+}
+
+.employeeBannerFirstOdd::before{
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 25px solid rgb(139, 64, 0);
+    content: "";
+    right:-25px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.employeeBannerFirstOdd::after{
+    border: 5px solid white;
+    content: "";
+    height: 4px;
+    right: -7px;
+    position: absolute;
+    top: 12px;
+    width: 4px;
+    border-radius: 100%;
+}
+
+.employeeBannerLastOdd::before{
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 25px solid rgb(139, 64, 0);
+    content: "";
+    left:-25px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.employeeBannerLastOdd::after{
+    border: 5px solid white;
+    content: "";
+    height: 4px;
+    left: -7px;
+    position: absolute;
+    top: 12px;
+    width: 4px;
+    border-radius: 100%;
+}
+
+.employeeBannerMiddleOdd{
+    position: relative;
+    background-color: rgb(139, 64, 0);
+    height: 40px;
+    width: 20px;
+    font-size: 25px;
+    white-space: nowrap;
+    margin: 20px;
+}
+
+.employeeBannerMiddleOdd::before{
+    border-bottom: 20px solid rgb(139, 64, 0);
+    border-top: 20px solid rgb(139, 64, 0);
+    border-left: 25px solid transparent;
+    border-right:  25px solid transparent;
+    content: "";
+
+    left: -25px;
+    height: 0;
+    position: absolute;
+    width: 20px;
+}
+
+.employeeBannerMiddleOdd::after{
+    border: 5px solid white;
+    content: "";
+    height: 4px;
+    left: 3.5px;
+    position: absolute;
+    top: 12px;
+    width: 4px;
+    border-radius: 100%;
+}
+
+.employeeBannerMainOdd{
+    position: relative;
+    background-color: rgb(139, 64, 0);
+    color:white;
+    height: 40px;
+    width: 50%;
+    font-size: 25px;
+    white-space: nowrap;
+    margin: 20px;   
+}

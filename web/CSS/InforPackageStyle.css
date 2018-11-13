@@ -1,0 +1,492 @@
+.InforPackageHeader{
+    background-color: rgb(121,56,2);
+    width: 30%;
+    position: relative;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.InforPackageHeader h2{
+    position: absolute;
+    height: 25px;
+    width: 90%;
+    margin: auto ;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.InforPackageHeader::before{
+    position: absolute;
+    border-bottom: 25px solid rgb(255,116,23);
+    border-left: 20px solid transparent;
+    border-top: 25px solid rgb(255,116,23);
+    border-right: 20px solid transparent;
+    content: "";
+    left: -10px;
+    right: -10px;
+}
+
+.InforPackageHeader #divTop::before {
+    top:-10px;
+    border: 6px solid rgb(121,52,2);
+    content: "";
+    height: 6px;
+    left: -25px;    
+    position: absolute;
+    width: 6px;
+    border-radius: 100%;
+}
+
+.InforPackageHeader #divTop::after {
+    top:-10px;
+    border: 6px solid rgb(121,52,2);
+    content: "";
+    height: 6px;
+    right: -25px;
+    position: absolute;
+    width: 6px;
+    border-radius: 100%;
+}
+
+.InforPackageHeader #divBottom::before {
+    bottom:-10px;
+    border: 6px solid rgb(121,52,2);
+    content: "";
+    height: 6px;
+    left: -25px;    
+    position: absolute;
+    width: 6px;
+    border-radius: 100%;
+}
+
+.InforPackageHeader #divBottom::after {
+    bottom:-10px;
+    border: 6px solid rgb(121,52,2);
+    content: "";
+    height: 6px;
+    right: -25px;
+    position: absolute;
+    width: 6px;
+    border-radius: 100%;
+}
+
+.InforPackageTable{
+    margin: 25px auto;
+    border-collapse: collapse;
+}
+
+.labelInforPackage{
+    position: relative;
+    background-color: rgb(249,129,42);
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.labelInforPackage::before{
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-left: 30px solid rgb(249,129,42);
+    content: "";
+    bottom: 0;
+    right: -30px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.labelInforPackage::after{
+    border-bottom: 20px solid rgb(249,129,42);
+    border-top: 20px solid rgb(249,129,42);
+    border-left: 20px solid transparent;
+    border-right:  20px solid transparent;
+    content: "";
+    bottom: 0;
+    left: -20px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.labelInforPackage b{
+    height: 25px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.divfirst::before{
+    top:-10px;
+    border: 6px solid rgb(121,52,2);
+    content: "";
+    height: 6px;
+    left: -35px;    
+    position: absolute;
+    width: 6px;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.divfirst::after{
+    bottom:-10px;
+    border: 6px solid rgb(121,52,2);
+    content: "";
+    height: 6px;
+    left: -35px;    
+    position: absolute;
+    width: 6px;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.divMain::before{
+    top:10px;
+    border: 6px solid rgb(121,52,2);
+    content: "";
+    height: 6px;
+    right: -45px;
+    position: absolute;
+    width: 6px;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.divlast::before{
+    top:-10px;
+    border: 6px solid rgb(121,52,2);
+    content: "";
+    height: 6px;
+    right: -35px;    
+    position: absolute;
+    width: 6px;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.divlast::after{
+    bottom:-10px;
+    border: 6px solid rgb(121,52,2);
+    content: "";
+    height: 6px;
+    right: -35px;    
+    position: absolute;
+    width: 6px;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.TextContainlabelInforPackage{
+    position: relative;
+    background-color: rgb(249,129,42);
+    height: 40px;
+    width: 367px;
+    font-size: 18px;
+    margin-left: 65px;
+}
+
+.TextContainlabelInforPackage b{
+    height: 25px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.TextContainlabelInforPackage::before{
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-right: 30px solid rgb(249,129,42);
+    content: "";
+    bottom: 0;
+    left: -30px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.TextContainlabelInforPackage::after{
+    border-bottom: 20px solid rgb(249,129,42);
+    border-top: 20px solid rgb(249,129,42);
+    border-left: 20px solid transparent;
+    border-right:  20px solid transparent;
+    content: "";
+    bottom: 0;
+    right: -20px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.TextContainlabelLeftInforPackage b{
+    height: 25px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.TextContainlabelRightInforPackage b{
+    height: 25px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.TextContainlabelLeftInforPackage{
+    position: relative;
+    background-color: rgb(249,129,42);
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+    margin-left: 65px;
+}
+
+.TextContainlabelLeftInforPackage::before{
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-right: 30px solid rgb(249,129,42);
+    content: "";
+    bottom: 0;
+    left: -30px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.TextContainlabelLeftInforPackage::after{
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-left: 30px solid rgb(249,129,42);
+    content: "";
+    bottom: 0;
+    right: -30px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.TextContainlabelRightInforPackage{
+    position: relative;
+    background-color: rgb(249,129,42);
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+    margin-left: 65px;
+}
+
+.TextContainlabelRightInforPackage::before{
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-right: 30px solid rgb(249,129,42);
+    content: "";
+    bottom: 0;
+    left: -30px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.TextContainlabelRightInforPackage::after{
+    border-bottom: 20px solid rgb(249,129,42);
+    border-top: 20px solid rgb(249,129,42);
+    border-left: 20px solid transparent;
+    border-right:  20px solid transparent;
+    content: "";
+    bottom: 0;
+    right: -20px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.labelInforPackageOdd{
+    position: relative;
+    background-color: rgb(211, 109, 98);
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.labelInforPackageOdd::before{
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-left: 30px solid rgb(211, 109, 98);
+    content: "";
+    bottom: 0;
+    right: -30px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.labelInforPackageOdd::after{
+    border-bottom: 20px solid rgb(211, 109, 98);
+    border-top: 20px solid rgb(211, 109, 98);
+    border-left: 20px solid transparent;
+    border-right:  20px solid transparent;
+    content: "";
+    bottom: 0;
+    left: -20px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.labelInforPackageOdd b{
+    height: 25px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+.TextContainlabelInforPackageOdd{
+    position: relative;
+    background-color: rgb(211, 109, 98);
+    height: 40px;
+    width: 367px;
+    font-size: 18px;
+    margin-left: 65px;
+}
+
+.TextContainlabelInforPackageOdd b{
+    height: 25px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.TextContainlabelInforPackageOdd::before{
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-right: 30px solid rgb(211, 109, 98);
+    content: "";
+    bottom: 0;
+    left: -30px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.TextContainlabelInforPackageOdd::after{
+    border-bottom: 20px solid rgb(211, 109, 98);
+    border-top: 20px solid rgb(211, 109, 98);
+    border-left: 20px solid transparent;
+    border-right:  20px solid transparent;
+    content: "";
+    bottom: 0;
+    right: -20px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.TextContainlabelLeftInforPackageOdd b{
+    height: 25px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.TextContainlabelRightInforPackageOdd b{
+    height: 25px;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.TextContainlabelLeftInforPackageOdd{
+    position: relative;
+    background-color: rgb(211, 109, 98);
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+    margin-left: 65px;
+}
+
+.TextContainlabelLeftInforPackageOdd::before{
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-right: 30px solid rgb(211, 109, 98);
+    content: "";
+    bottom: 0;
+    left: -30px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.TextContainlabelLeftInforPackageOdd::after{
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-left: 30px solid rgb(211, 109, 98);
+    content: "";
+    bottom: 0;
+    right: -30px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.TextContainlabelRightInforPackageOdd{
+    position: relative;
+    background-color: rgb(211, 109, 98);
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+    margin-left: 65px;
+}
+
+.TextContainlabelRightInforPackageOdd::before{
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    border-right: 30px solid rgb(211, 109, 98);
+    content: "";
+    bottom: 0;
+    left: -30px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.TextContainlabelRightInforPackageOdd::after{
+    border-bottom: 20px solid rgb(211, 109, 98);
+    border-top: 20px solid rgb(211, 109, 98);
+    border-left: 20px solid transparent;
+    border-right:  20px solid transparent;
+    content: "";
+    bottom: 0;
+    right: -20px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}

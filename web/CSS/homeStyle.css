@@ -1,0 +1,562 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    /*background: linear-gradient(0.75turn,rgb(233, 180, 69),rgb(249, 100, 0));*/ 
+    background-color: white; 
+}
+
+section:not(.sectionActive){
+    display: none;
+}
+
+#header { grid-area: header; }
+#menuleft { grid-area: menu; }
+#main { grid-area: main; }
+#menuright { grid-area: right; }
+#footer { grid-area: footer; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header '
+        'main main main'
+        'footer footer footer';
+    /*grid-gap: 10px;*/
+    margin: 0 15px;
+    background-color: white;
+}
+.grid-container > div {
+    background-color: rgb(228,223,220);;
+}
+
+/*----------------------------------------------------menu bar------------------------------------------------------------------*/
+.navbar {
+    overflow: hidden;
+    border-bottom: 2px solid transparent;
+    background: linear-gradient(0.75turn,rgb(233, 180, 69),rgb(249, 100, 0));
+    border-image-slice: 1;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .subnav:hover {   
+    border-left: 2px solid white;
+}
+
+.navbar a:hover::before{   
+    border-top: 100px solid transparent;
+    border-left: 100px solid green;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(129,63,11);
+    width: inherit;
+    z-index: 1;
+    left: 15px;
+    right: 15px;
+    margin: auto;
+}
+
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.subnav-content a:hover {   
+    color: black;   
+    background-color: rgb(239,130,13);
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 15%;
+    padding: 10px;
+    background-color: #ccc;
+    height: 250px;
+}
+
+.column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.column a:hover {
+    background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        height: auto;
+    }
+}
+/*---------------------------------------------------slide show--------------------------------------------------------------*/
+.mySlides {       
+    display: none; 
+
+}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    height: 550px;
+    position: relative;
+    width: 100%;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: white;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {  
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    z-index: 1;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+
+.flashPostContain{
+    position: absolute;
+    color: white;               
+    width: 37%;
+    top: 0;
+    background-color: rgba(229, 99, 21,0.5);
+    height: 550px;
+}
+
+.flashPostContain::before{
+    border-top: 550px solid transparent;
+    border-left: 120px solid rgba(229, 99, 21,0.5);   
+    content: "";
+    height: 0;
+    right: -120px;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+
+.flashPostHeader{   
+    margin-top: 100px;
+    font-size: 4em;
+    font-family: Aldo;
+}
+
+.flashPostContent{
+    margin: 20px 65px;
+    height: 200px;
+    text-indent: 30px;
+    font-size: 1em;
+    white-space: normal; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.flashPostButton{
+    width: 150px;
+    height: 50px;
+    background-color: rgba(229, 99, 21,0.1);
+    border-radius: 5px;
+    border: 2px solid white;color: white;
+}
+
+.flashPostButton:hover{
+    background-color: rgba(229, 99, 21,0.5);                             
+}
+
+/*-----------------------------------------------Login--------------------------------------------------------------------------*/
+.buttonLoginLogout{
+    color: white;
+    position:absolute;
+    right: 20px;
+    height: 40px;  
+    font-size: 22px;
+    font-weight: bold;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    text-align: center;
+    cursor: pointer;
+}
+.buttonLoginLogout:hover{
+    border-bottom: 3px solid white;
+}
+
+.buttonLoginLogoutText{
+    margin: 5px;
+}
+
+.inputtext{
+    height: 38px;     
+    text-indent: 25px; 
+    background-color: #F79862;
+    border: 1px solid #ccc;
+    color: white;
+    width: 100%;
+    float: right;
+    margin-bottom: 25px;
+}
+
+.placeholder{
+    width: 100%;
+    height: 40px;
+    text-indent: 5px;
+    border: 1px solid #ccc;
+    background-color: #F05E23;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.placeholder::before {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 20px solid white;
+    content: "";
+    height: 0;
+    right: -20px;
+    position: absolute;
+    top: 5px;
+    width: 0;
+}
+
+.placeholder::after {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 20px solid #F05E23;
+    content: "";
+    height: 0;
+    right: -18px;
+    position: absolute;
+    top: 5px;
+    width: 0;
+
+}
+
+.innerplaceholder{
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+.login-container-main {
+    padding: 30px;
+    padding-bottom: 0;
+    background-color: #813F0B;
+
+}
+
+.login-container-end{
+    background-color: #F05E23;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border:3px solid #813F0B;
+}
+
+.login-container-end .login-end{
+    color: white;
+    margin-top: 120px; 
+    text-decoration: none;
+}
+
+/* Set a style for all buttons */
+.login-button {
+    background-color: #F05E23;
+    width: 100%;border-radius: 5px;
+    color: white;
+    padding: 14px 0;  
+}
+.login-button:hover {
+    opacity: 0.8;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    background-color: #F05E23;
+    position: relative;
+    height: 100px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border:3px solid #813F0B;
+}
+
+img.avatar {
+    top: -75px;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    position: absolute;
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid #813F0B;
+    background-color: white;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.8);    
+    padding-top: 80px;
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+    border-radius: 20px;
+    background-color: #fefefe;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/*toggle switch*/
+.switch {
+    margin: 20px 0;
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 15px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    top: -6px;
+    left: -2px;
+    background: linear-gradient(0.75turn,#F05E23,#F79862);
+    -webkit-transition: .4s;
+    transition: .1s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #EF820D;
+}
+
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+    background: linear-gradient(0.25turn,#F05E23,#F79862);
+}
+
+.userProfile{
+    height: inherit;
+    float: right;
+    display: flex;
+    justify-content: flex-start;
+    width: 25%;
+    flex-wrap: nowrap;
+}
+
+.containMain{
+    margin: 0 auto;
+}
+
+/*=========================Footer======================================*/
+.footerImageContain{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: red;
+    background: linear-gradient(0.25turn,rgb(233, 180, 69),rgb(249, 100, 0));
+}
+
+.footerImageContainInfor{
+    position: absolute;
+    width: 20%;
+    height: 80%;
+    margin:  auto 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(128, 0, 0);
+    top: 0;
+    bottom: 0;
+}
+
+.footerImageContainInfor p {
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+/*===========================================Clock============================================*/
+#canvasClock {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 25%;
+    height: 25%;
+    z-index: 999;
+}

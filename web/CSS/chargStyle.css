@@ -1,0 +1,232 @@
+.chargeAndDeliveryTable table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    border: 2px double black;
+    width: 80%;
+    margin: 0 auto;   
+    
+}
+
+.chargeAndDeliveryTable td, th {
+    text-align: left;
+    padding: 8px;
+    
+}
+
+.chargeAndDeliveryTable tr:nth-child(even) {
+    background-color: rgb(241, 227, 192);
+}
+
+.chargeAndDeliveryTable tr:nth-child(odd) {
+    background-color: rgba(229, 99, 21,0.3);
+}
+
+.chargeAndDeliveryTable input[type=text]{
+    background-color: rgb(229, 99, 21);
+    height: 36px;
+    width: 100%;
+    border: none;
+}
+
+.chargeAndDeliveryTable input[type=submit]{
+    background-color: white;
+    border-radius: 20px;
+    height: 36px;
+    width: 70%;
+    border:1px solid rgb(0, 120, 215);
+}
+
+.chargeAndDeliveryTable select{
+    background-color: rgb(229, 99, 21);
+    height: 40px;
+    width: 100%;
+    border: none;
+}
+
+.containText{
+    width: 50%;
+    padding: 5px;
+    height: 30px;
+    border-left:5px solid white;
+    text-align: left;
+    font-size: 20px;
+}
+
+.banners{
+    position: relative;
+    background-color: rgb(229, 99, 21);
+    height: 40px;
+    width: 115%;
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+.banners::before{
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 25px solid rgb(229, 99, 21);
+    content: "";
+    left:-25px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.banners::after {
+    border: 5px solid white;
+    content: "";
+    height: 4px;
+    left: 10px;
+    position: absolute;
+    top: 12px;
+    width: 4px;
+    border-radius: 100%;
+}
+
+.banners2{
+    position: relative;
+    background-color: rgb(229, 99, 21);
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.banners2::before{
+    border-top: 20px solid transparent;
+    border-left: 20px solid rgb(229, 99, 21);
+    content: "";
+    bottom: 0;
+    right: -20px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.banners2::after{
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid rgb(229, 99, 21);
+    content: "";
+    right: -20px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.banners3{
+    position: relative;
+    background-color: rgb(229, 99, 21);
+    height: 40px;
+    width: 115%;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.bannersodd{
+    position: relative;
+    background-color: rgb(129, 63, 11);
+    height: 40px;
+    width: 115%;
+    font-size: 25px;
+    white-space: nowrap;
+    color: white;
+}
+
+.bannersodd::before{
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 25px solid rgb(129, 63, 11);
+    content: "";
+    left:-25px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.bannersodd::after {
+    border: 5px solid white;
+    content: "";
+    height: 4px;
+    left: 10px;
+    position: absolute;
+    top: 12px;
+    width: 4px;
+    border-radius: 100%;
+}
+
+.banners2odd{
+    position: relative;
+    background-color: rgb(129, 63, 11);
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+    white-space: nowrap;
+    color: white;
+}
+
+.banners2odd::before{
+    border-top: 20px solid transparent;
+    border-left: 20px solid rgb(129, 63, 11);
+    content: "";
+    bottom: 0;
+    right: -20px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.banners2odd::after{
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid rgb(129, 63, 11);
+    content: "";
+    right: -20px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.banners3odd{
+    position: relative;
+    background-color: 	rgb(129, 63, 11);
+    height: 40px;
+    width: 115%;
+    font-size: 20px;
+    white-space: nowrap;
+    color: white;
+}
+
+
+.bannersMain{
+    margin-left: -15px;
+    position: relative;
+    background-color: rgb(229, 99, 21);
+    height: 40px;
+    width: 103%;
+    text-align: center;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.bannersMain::before{
+    border-top: 6px solid transparent;
+    border-right: 6px solid rgba(229, 99, 21,0.8);
+    content: "";
+    top: -6px;
+    left: 0;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+
+.bannersMain::after{
+    border-top: 6px solid transparent;
+    border-left: 6px solid rgba(229, 99, 21,0.8);
+    content: "";
+    top: -6px;
+    right: 0;
+    height: 0;
+    position: absolute;
+    width: 0;
+    
+}
+
