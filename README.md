@@ -1,6 +1,6 @@
 # ProjectPRJ321Final
 
-Các file jar đã được add sẵn vào trong project<br />
+Các file jar đã được add sẵn vào trong project, trong file project có database script  <br />
 bước 1: run script sql server <br />
 	- run script trong file vnpost.sql<br />
 bước 2: run netbean->Open Project->clean and build<br />
