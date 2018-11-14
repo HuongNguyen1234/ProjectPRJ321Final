@@ -1,4 +1,16 @@
-# ProjectPRJ321Final
+# ProjectPRJ321Final 
+#Project Name :FlashPost
+
+Tên Thành Viên : Nguyễn Thị Huờng <br />
+Mã Sinh Viên :	SE05881<br />
+Phần việc : Code các hàm và function để lấy dữ liệu trong cơ sở dữ liệu . <br />
+Tên Thành Viên : Nguyễn Bảo Long <br />
+Mã Sinh Viên : 	SE05816<br />
+Phần việc : Sửa và code front-end cho project,code hàm xử lí đăng nhập  .<br />
+Tên Thành Viên : Lê Mạnh Hùng <br />
+Mã Sinh Viên : SE05565 <br />
+Phần việc : Tạo cơ sở dữ liệu cho project và code font-end <br />
+
 
 Các file jar đã được add sẵn vào trong project, trong file project có database script  <br />
 bước 1: run script sql server <br />
